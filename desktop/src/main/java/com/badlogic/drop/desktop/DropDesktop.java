@@ -1,6 +1,6 @@
 package com.badlogic.drop.desktop;
 
-import com.badlogic.drop.core.Drop;
+import com.badlogic.drop.Drop;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
