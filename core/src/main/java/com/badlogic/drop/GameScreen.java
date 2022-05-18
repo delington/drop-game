@@ -53,7 +53,7 @@ public class GameScreen implements Screen {
 
         // create the camera
         camera = new OrthographicCamera();
-        camera.setToOrtho(false, 800, 480);
+        camera.setToOrtho(false, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         // create a Rectangle to logically represent the bucket
         bucket = new Rectangle();
@@ -70,10 +70,10 @@ public class GameScreen implements Screen {
 
     private void spawnRaindrop() {
         Rectangle raindrop = new Rectangle();
-        raindrop.x = MathUtils.random(0, 800 - 64);
-        raindrop.y = 480;
-        raindrop.width = 64;
-        raindrop.height = 64;
+        raindrop.x = MathUtils.random(0, SCREEN_WIDTH - BUCKET_SIZE);
+        raindrop.y = SCREEN_HEIGHT;
+        raindrop.width = BUCKET_SIZE;
+        raindrop.height = BUCKET_SIZE;
         raindrops.add(raindrop);
         lastDropTime = TimeUtils.nanoTime();
     }
